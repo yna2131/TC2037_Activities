@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: cpp.exe build active file",
+			"command": "D:\\mingw64\\mingw32\\bin\\cpp.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"-pthread",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: D:\\mingw64\\mingw32\\bin\\cpp.exe"
+		}
+	]
+}
