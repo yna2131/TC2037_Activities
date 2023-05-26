@@ -1,0 +1,114 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Csharp Highlighter</title>
+        <style>
+            body {
+                background-color: #434973; /* darker night sky */
+                color: #FFE5D4; /* warm light */
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            .keyword {
+                color: #F67E7D; /* vibrant red from castle */
+            }
+
+            .comment {
+                color: #85CDC8; /* brighter version of Sophie's dress */
+            }
+
+            .string {
+                color: #FBE274; /* vibrant gold */
+            }
+
+            .number {
+                color: #FFABAB; /* softer red */
+            }
+
+            .operator {
+                color: #FF726F; /* fiery red of Calcifer */
+            }
+
+            .punctuation {
+                color: #FBE274; /* vibrant gold */
+            }
+
+            .identifier {
+                color: #A7E0E0; /* sky blue */
+            }
+
+            .preprocessor {
+                color: #F67E7D; /* vibrant red from castle */
+            }
+
+            .exception {
+                color: #FF726F; /* fiery red of Calcifer */
+            }
+
+            .datatypes {
+                color: #FFABAB; /* softer red */
+            }
+        </style>
+    </head>
+    <body>
+    <pre><code>
+<span class="comment">// C# Program to Perform all Basic Arithmetic Operations</span>
+
+<span class="keyword">using</span> System<span class="punctuation">;</span>
+<span class="keyword">using</span> System<span class="punctuation"><span class="punctuation">.</span></span>Collections<span class="punctuation"><span class="punctuation">.</span></span>Generic<span class="punctuation">;</span>
+<span class="keyword">using</span> System<span class="punctuation">.</span>Text<span class="punctuation">;</span>
+<span class="keyword">namespace</span> Program
+<span class="punctuation">{</span>
+    <span class="keyword">class</span> Program
+    <span class="punctuation">{</span>
+        <span class="keyword">static</span> <span class="keyword">void</span> Main<span class="punctuation">(</span><span class="keyword">string</span><span class="punctuation">[</span><span class="punctuation">]</span> args<span class="punctuation">)</span>
+        <span class="punctuation">{</span>
+            <span class="keyword">int</span> Num1<span class="punctuation"><span class="punctuation">,</span></span> Num2<span class="punctuation"><span class="punctuation">,</span></span> result<span class="punctuation">;</span>
+            <span class="keyword">char</span> option<span class="punctuation">;</span>
+            Console<span class="punctuation">.</span>Write<span class="punctuation">(</span><span class="string">"Enter the First Number : "</span><span class="punctuation">)</span><span class="punctuation">;</span>
+            Num1<span class="operator"> = </span>Convert<span class="punctuation"><span class="punctuation">.</span></span>ToInt32<span class="punctuation"><span class="punctuation">(</span></span>Console<span class="punctuation"><span class="punctuation">.</span></span>ReadLine<span class="punctuation"><span class="punctuation">(</span></span><span class="punctuation"><span class="punctuation">)</span></span><span class="punctuation"><span class="punctuation">)</span></span><span class="punctuation">;</span>
+            Console<span class="punctuation">.</span>Write<span class="punctuation">(</span><span class="string">"Enter the Second Number : "</span><span class="punctuation">)</span><span class="punctuation">;</span>
+            Num2<span class="operator"> = </span>Convert<span class="punctuation"><span class="punctuation">.</span></span>ToInt32<span class="punctuation"><span class="punctuation">(</span></span>Console<span class="punctuation"><span class="punctuation">.</span></span>ReadLine<span class="punctuation"><span class="punctuation">(</span></span><span class="punctuation"><span class="punctuation">)</span></span><span class="punctuation"><span class="punctuation">)</span></span><span class="punctuation">;</span>
+            Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span><span class="string">"Main Menu"</span><span class="punctuation">)</span><span class="punctuation">;</span>
+            Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span>"1<span class="punctuation">.</span> Addition"<span class="punctuation">)</span><span class="punctuation">;</span>
+            Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span>"2<span class="punctuation">.</span> Subtraction"<span class="punctuation">)</span><span class="punctuation">;</span>
+            Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span>"3<span class="punctuation">.</span> Multiplication"<span class="punctuation">)</span><span class="punctuation">;</span>
+            Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span>"4<span class="punctuation">.</span> Division"<span class="punctuation">)</span><span class="punctuation">;</span>
+            Console<span class="punctuation">.</span>Write<span class="punctuation">(</span><span class="string">"Enter the Operation you want to perform : "</span><span class="punctuation">)</span><span class="punctuation">;</span>
+            option<span class="operator"> = </span>Convert<span class="punctuation"><span class="punctuation">.</span></span>ToChar<span class="punctuation"><span class="punctuation">(</span></span>Console<span class="punctuation"><span class="punctuation">.</span></span>ReadLine<span class="punctuation"><span class="punctuation">(</span></span><span class="punctuation"><span class="punctuation">)</span></span><span class="punctuation"><span class="punctuation">)</span></span><span class="punctuation">;</span>
+            <span class="keyword">switch</span> <span class="punctuation">(</span>option<span class="punctuation">)</span>
+            <span class="punctuation">{</span>
+            <span class="keyword">case</span> '<span class="number">1</span>'<span class="punctuation">:</span>
+                result<span class="operator"> = </span>Num1<span class="operator"> + </span>Num2<span class="punctuation">;</span>
+                Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span><span class="string">"The result of Addition is : {0}"</span><span class="punctuation">,</span> result<span class="punctuation">)</span><span class="punctuation">;</span>
+                <span class="keyword">break</span><span class="punctuation">;</span>
+            <span class="keyword">case</span> '<span class="number">2</span>'<span class="punctuation">:</span>
+                result<span class="operator"> = </span>Num1<span class="operator"> - </span>Num2<span class="punctuation">;</span>
+                Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span><span class="string">"The result of Subtraction is : {0}"</span><span class="punctuation">,</span> result<span class="punctuation">)</span><span class="punctuation">;</span>
+                <span class="keyword">break</span><span class="punctuation">;</span>
+            <span class="keyword">case</span> '<span class="number">3</span>'<span class="punctuation">:</span>
+                result<span class="operator"> = </span>Num1<span class="operator"> * </span>Num2<span class="punctuation">;</span>
+                Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span><span class="string">"The result of Multiplication is : {0}"</span><span class="punctuation">,</span> result<span class="punctuation">)</span><span class="punctuation">;</span>
+                <span class="keyword">break</span><span class="punctuation">;</span>
+            <span class="keyword">case</span> '<span class="number">4</span>'<span class="punctuation">:</span>
+                result<span class="operator"> = </span>Num1<span class="operator"> / </span>Num2<span class="punctuation">;</span>
+                Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span><span class="string">"The result of Division is : {0}"</span><span class="punctuation">,</span> result<span class="punctuation">)</span><span class="punctuation">;</span>
+                <span class="keyword">break</span><span class="punctuation">;</span>
+            <span class="keyword">default</span><span class="punctuation">:</span>
+                Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span><span class="string">"Invalid Option"</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                <span class="keyword">break</span><span class="punctuation">;</span>
+            <span class="punctuation">}</span>
+            Console<span class="punctuation">.</span>ReadLine<span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">;</span>
+        <span class="punctuation">}</span>
+ 
+    <span class="punctuation">}</span>
+<span class="punctuation">}</span>
+
+    </code></pre>
+    </body>
+    </html>

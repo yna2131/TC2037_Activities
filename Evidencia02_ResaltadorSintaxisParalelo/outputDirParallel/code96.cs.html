@@ -1,0 +1,89 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Csharp Highlighter</title>
+        <style>
+            body {
+                background-color: #434973; /* darker night sky */
+                color: #FFE5D4; /* warm light */
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            .keyword {
+                color: #F67E7D; /* vibrant red from castle */
+            }
+
+            .comment {
+                color: #85CDC8; /* brighter version of Sophie's dress */
+            }
+
+            .string {
+                color: #FBE274; /* vibrant gold */
+            }
+
+            .number {
+                color: #FFABAB; /* softer red */
+            }
+
+            .operator {
+                color: #FF726F; /* fiery red of Calcifer */
+            }
+
+            .punctuation {
+                color: #FBE274; /* vibrant gold */
+            }
+
+            .identifier {
+                color: #A7E0E0; /* sky blue */
+            }
+
+            .preprocessor {
+                color: #F67E7D; /* vibrant red from castle */
+            }
+
+            .exception {
+                color: #FF726F; /* fiery red of Calcifer */
+            }
+
+            .datatypes {
+                color: #FFABAB; /* softer red */
+            }
+        </style>
+    </head>
+    <body>
+    <pre><code>
+<span class="comment">// C# Program to Display Absolute value of a Number</span>
+
+<span class="keyword">using</span> System<span class="punctuation">;</span>
+<span class="keyword">using</span> System<span class="punctuation"><span class="punctuation">.</span></span>Collections<span class="punctuation"><span class="punctuation">.</span></span>Generic<span class="punctuation">;</span>
+<span class="keyword">using</span> System<span class="punctuation">.</span>Linq<span class="punctuation">;</span>
+<span class="keyword">using</span> System<span class="punctuation">.</span>Text<span class="punctuation">;</span>
+ 
+<span class="keyword">namespace</span> example
+<span class="punctuation">{</span>
+    <span <span class="keyword">class</span>="keyword">internal</span> <span class="keyword">class</span> Program
+    <span class="punctuation">{</span>
+        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> Main<span class="punctuation">(</span><span class="keyword">string</span><span class="punctuation">[</span><span class="punctuation">]</span> args<span class="punctuation">)</span>
+        <span class="punctuation">{</span>
+            <span class="keyword">int</span> num<span class="punctuation">;</span>
+            Console<span class="punctuation">.</span>Write<span class="punctuation">(</span><span class="string">"Enter a number:"</span><span class="punctuation">)</span><span class="punctuation">;</span>
+            num<span class="operator"> = </span>Convert<span class="punctuation"><span class="punctuation">.</span></span>ToInt32<span class="punctuation"><span class="punctuation">(</span></span>Console<span class="punctuation"><span class="punctuation">.</span></span>ReadLine<span class="punctuation"><span class="punctuation">(</span></span><span class="punctuation"><span class="punctuation">)</span></span><span class="punctuation"><span class="punctuation">)</span></span><span class="punctuation">;</span>
+            <span class="keyword">if</span> <span class="punctuation">(</span>num<span class="operator"> < </span><span class="number">0</span><span class="punctuation">)</span>
+            <span class="punctuation">{</span>
+                num<span class="operator"> = </span>num<span class="operator"> * </span><span class="operator">-</span><span class="number">1</span><span class="punctuation">;</span>
+            <span class="punctuation">}</span>
+ 
+            Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span><span class="string">"Absolute value : "</span><span class="operator"> + </span>num<span class="punctuation">)</span><span class="punctuation">;</span>
+            Console<span class="punctuation">.</span>ReadLine<span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">;</span>
+        <span class="punctuation">}</span>
+    <span class="punctuation">}</span>
+<span class="punctuation">}</span>
+
+    </code></pre>
+    </body>
+    </html>

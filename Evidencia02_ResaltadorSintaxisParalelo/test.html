@@ -1,0 +1,121 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Csharp Highlighter</title>
+        <style>
+            body {
+                background-color: #282a36;
+                color: #f8f8f2;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            .keyword {
+                color: #ff79c6;
+            }
+
+            .comment {
+                color: #6272a4;
+            }
+
+            .string {
+                color: #f1fa8c;
+            }
+
+            .number {
+                color: #bd93f9;
+            }
+
+            .operator {
+                color: #ff79c6;
+            }
+
+            .punctuation {
+                color: #ff79c6;
+            }
+
+            .identifier {
+                color: #50fa7b;
+            }
+
+            .preprocessor {
+                color: #ff79c6;
+            }
+
+            .exception {
+                color: #ff79c6;
+            }
+
+            .datatypes {
+                color: #bd93f9;
+            }
+        </style>
+    </head>
+    <body>
+    <pre><code>
+<span class="keyword">using</span> System<span class="punctuation">;</span>
+
+<span class="comment">// This is a comment that the compiler will ignore.</span>
+<span class="keyword">class</span> Program
+<span class="punctuation">{</span>
+    <span class="keyword">static</span> <span class="keyword">void</span> Main<span class="punctuation">(</span><span class="keyword">string</span><span class="punctuation">[</span><span class="punctuation">]</span> args<span class="punctuation">)</span>
+    <span class="punctuation">{</span>
+        <span class="keyword">int</span><span class="punctuation">[</span><span class="punctuation">]</span> numbers<span class="operator"> = </span><span class="punctuation">{</span> <span class="number">1</span><span class="punctuation"><span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span></span> <span class="number">2</span><span class="punctuation"><span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span></span> <span class="number">3</span><span class="punctuation"><span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span></span> <span class="number">4</span><span class="punctuation"><span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span></span> <span class="number">5</span> <span class="punctuation">}</span><span class="punctuation">;</span>
+        <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">int</span> i<span class="operator"> = </span><span class="number">0</span><span class="punctuation"><span class="punctuation">;</span></span> i<span class="operator"> < </span>numbers<span class="punctuation">.</span>Length<span class="punctuation"><span class="punctuation">;</span></span> i<span class="operator">++</span><span class="punctuation">)</span>
+        <span class="punctuation">{</span>
+            <span class="keyword">if</span> <span class="punctuation">(</span>numbers<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="operator"> % </span><span class="number">2</span><span class="operator"> == </span><span class="number">0</span><span class="punctuation">)</span>
+            <span class="punctuation">{</span>
+                Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span>numbers<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="operator"> + </span><span class="string">"even"</span><span class="punctuation">)</span><span class="punctuation">;</span>
+            <span class="punctuation">}</span>
+            <span class="keyword">else</span>
+            <span class="punctuation">{</span>
+                Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span>numbers<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="operator"> + </span><span class="string">"odd"</span><span class="punctuation">)</span><span class="punctuation">;</span>
+            <span class="punctuation">}</span>
+        <span class="punctuation">}</span>
+
+        Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">;</span>
+        <span class="keyword">bool</span> <span class="keyword">bool</span>Example<span class="operator"> = </span><span class="keyword">true</span><span class="punctuation">;</span>
+
+        <span class="keyword">string</span> message<span class="operator"> = </span><span class="string">"Hello, world"</span><span class="punctuation">;</span>
+        <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">int</span> i<span class="operator"> = </span><span class="number">0</span><span class="punctuation"><span class="punctuation">;</span></span> i<span class="operator"> < </span>message<span class="punctuation">.</span>Length<span class="punctuation"><span class="punctuation">;</span></span> i<span class="operator">++</span><span class="punctuation">)</span>
+        <span class="punctuation">{</span>
+            Console<span class="punctuation">.</span>Write<span class="punctuation">(</span>message<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="operator"> + </span><span class="string">" "</span><span class="punctuation">)</span><span class="punctuation">;</span>
+        <span class="punctuation">}</span>
+        Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+        MyClass myObject<span class="operator"> = </span><span class="keyword">new</span> MyClass<span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">;</span>
+        myObject<span class="punctuation">.</span>MyMethod<span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">;</span>
+        <span class="exception">throw</span> something<span class="punctuation">;</span>
+    <span class="punctuation">}</span>
+<span class="punctuation">}</span>
+
+<span class="keyword">class</span> MyClass
+<span class="punctuation">{</span>
+    <span class="keyword">public</span> <span class="keyword">void</span> MyMethod<span class="punctuation">(</span><span class="punctuation">)</span>
+    <span class="punctuation">{</span>
+        <span class="exception">try</span>
+        <span class="punctuation">{</span>
+            <span class="keyword">int</span> x<span class="operator"> = </span><span class="number">5</span><span class="punctuation">;</span>
+            <span class="keyword">int</span> y<span class="operator"> = </span><span class="number">0</span><span class="punctuation">;</span>
+            <span class="keyword">int</span> z<span class="operator"> = </span>x<span class="operator"> / </span>y<span class="punctuation">;</span>
+        <span class="punctuation">}</span>
+        <span class="exception">catch</span> <span class="punctuation">(</span>DivideByZeroException e<span class="punctuation">)</span>
+        <span class="punctuation">{</span>
+            Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span><span class="string">"DivideByZeroException caught!"</span><span class="punctuation">)</span><span class="punctuation">;</span>
+        <span class="punctuation">}</span>
+        <span class="exception">finally</span>
+        <span class="punctuation">{</span>
+            Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span>"This a block<span class="punctuation">.</span>"<span class="punctuation">)</span><span class="punctuation">;</span>
+        <span class="punctuation">}</span>
+
+        myObject <span class="keyword">is</span> MyClass<span class="punctuation">;</span>
+    <span class="punctuation">}</span>
+<span class="punctuation">}</span>
+
+    </code></pre>
+    </body>
+    </html>

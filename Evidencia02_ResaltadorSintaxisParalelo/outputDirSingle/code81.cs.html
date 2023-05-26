@@ -1,0 +1,95 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Csharp Highlighter</title>
+        <style>
+            body {
+                background-color: #434973; /* darker night sky */
+                color: #FFE5D4; /* warm light */
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            .keyword {
+                color: #F67E7D; /* vibrant red from castle */
+            }
+
+            .comment {
+                color: #85CDC8; /* brighter version of Sophie's dress */
+            }
+
+            .string {
+                color: #FBE274; /* vibrant gold */
+            }
+
+            .number {
+                color: #FFABAB; /* softer red */
+            }
+
+            .operator {
+                color: #FF726F; /* fiery red of Calcifer */
+            }
+
+            .punctuation {
+                color: #FBE274; /* vibrant gold */
+            }
+
+            .identifier {
+                color: #A7E0E0; /* sky blue */
+            }
+
+            .preprocessor {
+                color: #F67E7D; /* vibrant red from castle */
+            }
+
+            .exception {
+                color: #FF726F; /* fiery red of Calcifer */
+            }
+
+            .datatypes {
+                color: #FFABAB; /* softer red */
+            }
+        </style>
+    </head>
+    <body>
+    <pre><code>
+<span class="comment">// C# Program to Demonstrate Boxing Operations</span>
+
+<span class="keyword">using</span> System<span class="punctuation">;</span>
+<span class="keyword">class</span> sample
+<span class="punctuation">{</span>
+    <span class="keyword">int</span> x<span class="operator"> = </span><span class="number">10</span><span class="punctuation">;</span>
+    <span class="keyword">object</span> obj<span class="punctuation">;</span>
+    <span class="keyword">void</span> boxmethod<span class="punctuation">(</span><span class="punctuation">)</span>
+    <span class="punctuation">{</span>
+        sample s<span class="operator">= </span><span class="keyword">new</span> sample<span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">;</span>
+        <span class="keyword">bool</span> b<span class="punctuation">;</span>
+        <span class<span class="operator">=</span>"keyword">object</span> ob<span class="operator">=</span><span class="string">"CSHARP"</span><span class="punctuation">;</span>
+        b<span class="operator">=</span>s<span class="punctuation">.</span>obj <span class="keyword">is</span> <span class="keyword">int</span><span class="punctuation">;</span>
+        Console<span class="punctuation">.</span>WriteLine<span class="punctuation">(</span>b<span class="punctuation">)</span><span class="punctuation">;</span>
+        s<span class="punctuation">.</span>obj<span class="operator"> = </span>x<span class="punctuation">;</span>
+        b<span class="operator"> = </span>s<span class="punctuation">.</span>obj <span class="keyword">is</span> <span class="keyword">int</span><span class="punctuation">;</span>
+        Console<span class="punctuation"><span class="punctuation"><span class="punctuation">.</span></span></span>WriteLine<span class="punctuation">(</span><span class="string">"{0}<span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span>{1}<span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span>{2}"</span><span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span>s<span class="punctuation"><span class="punctuation"><span class="punctuation">.</span></span></span>obj<span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span>s<span class="punctuation"><span class="punctuation"><span class="punctuation">.</span></span></span>x<span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span>b<span class="punctuation">)</span><span class="punctuation">;</span>
+        s<span class="punctuation"><span class="punctuation">.</span></span>x<span class="operator"> = </span><span class="punctuation">(</span><span class="keyword">int</span><span class="punctuation">)</span>s<span class="punctuation"><span class="punctuation">.</span></span>obj<span class="punctuation">;</span>
+        s<span class="punctuation">.</span>x<span class="operator"> = </span><span class="number">20</span><span class="punctuation">;</span>
+        b<span class="operator"> = </span>s<span class="punctuation">.</span>obj <span class="keyword">is</span> <span class="keyword">int</span><span class="punctuation">;</span>
+        Console<span class="punctuation"><span class="punctuation"><span class="punctuation">.</span></span></span>WriteLine<span class="punctuation">(</span><span class="string">"{0}<span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span>{1}<span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span>{2}"</span><span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span> s<span class="punctuation"><span class="punctuation"><span class="punctuation">.</span></span></span>obj<span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span> s<span class="punctuation"><span class="punctuation"><span class="punctuation">.</span></span></span>x<span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span> b<span class="punctuation">)</span><span class="punctuation">;</span>
+        s<span class<span class="operator">=</span>"punctuation">.</span>obj<span class="operator">=</span><span class="string">"CSHARP"</span><span class="punctuation">;</span>
+        b<span class="operator">=</span>s<span class="punctuation">.</span>obj <span class="keyword">is</span> <span class="keyword">int</span><span class="punctuation">;</span>
+        Console<span class="punctuation"><span class="punctuation"><span class="punctuation">.</span></span></span>WriteLine<span class="punctuation">(</span><span class="string">"{0}<span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span>{1}<span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span>{2}"</span><span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span>s<span class="punctuation"><span class="punctuation"><span class="punctuation">.</span></span></span>obj<span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span>s<span class="punctuation"><span class="punctuation"><span class="punctuation">.</span></span></span>x<span class="punctuation"><span class="punctuation"><span class="punctuation">,</span></span></span>b<span class="punctuation">)</span><span class="punctuation">;</span>
+        Console<span class="punctuation">.</span>ReadLine<span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="punctuation">}</span>
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> Main<span class="punctuation">(</span><span class="punctuation">)</span>
+    <span class="punctuation">{</span>
+        sample s<span class="operator">=</span><span class="keyword">new</span> sample<span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">;</span>
+        s<span class="punctuation">.</span>boxmethod<span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="punctuation">}</span>
+<span class="punctuation">}</span>
+
+    </code></pre>
+    </body>
+    </html>
